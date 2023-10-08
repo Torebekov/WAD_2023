@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    display: flex;
+}
+
+.product-list {
+    flex: 70%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+.cart {
+    flex: 30%;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Add hover effect */
+.product-card:hover {
+    border-color: #3498db;
+    cursor: pointer;
+}

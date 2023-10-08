@@ -1,0 +1,9 @@
+.hoc-wrapper {
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.hoc-content:hover {
+    border-color: #3498db;
+    cursor: pointer;
+}
