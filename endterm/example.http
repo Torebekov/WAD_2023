@@ -1,0 +1,42 @@
+### Login
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "password"
+}
+
+### Create Post
+POST http://localhost:8080/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3NDQyNTYsInVzZXJuYW1lIjoiYWRtaW4ifQ.HitbsFKGXR40jkNi7behvOM4EVIxdmwG2MHScN7nrKA
+
+{
+    "title": "New Post",
+    "text": "About New Post",
+    "author": "New name"
+}
+
+### Get Posts
+GET http://localhost:8080/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3NDQyNTYsInVzZXJuYW1lIjoiYWRtaW4ifQ.HitbsFKGXR40jkNi7behvOM4EVIxdmwG2MHScN7nrKA
+
+### Get Post
+GET http://localhost:8080/posts/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3NDQyNTYsInVzZXJuYW1lIjoiYWRtaW4ifQ.HitbsFKGXR40jkNi7behvOM4EVIxdmwG2MHScN7nrKA
+
+### Update Post
+PUT http://localhost:8080/posts/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3NDQyNTYsInVzZXJuYW1lIjoiYWRtaW4ifQ.HitbsFKGXR40jkNi7behvOM4EVIxdmwG2MHScN7nrKA
+
+{
+    "title": "Update Post",
+    "text": "About Update Post",
+    "author": "Update name"
+}
+
+### Delete Post
+DELETE http://localhost:8080/posts/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDI3NDQyNTYsInVzZXJuYW1lIjoiYWRtaW4ifQ.HitbsFKGXR40jkNi7behvOM4EVIxdmwG2MHScN7nrKA
